@@ -31,5 +31,5 @@ app.use(express.urlencoded({ extended: true }));
 
 // routes
 app.get('/', (request, response) => {
-    response.render('index');
+    response.render('home');
 });

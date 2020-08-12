@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+}
+
+
+main {
+    width: 100%;
+}
+
+.banner {
+    display: block;
+    margin: 60px 0;
+    width: 100%;
+}

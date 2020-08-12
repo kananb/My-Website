@@ -1,0 +1,21 @@
+.content-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    align-content: center;
+    justify-content: center;
+    
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+.copyright {
+    grid-column: -1 / -2;
+    align-self: end;
+
+    display: inline-block;
+    text-align: right;
+    margin: 0 10px 10px 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
