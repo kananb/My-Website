@@ -80,6 +80,12 @@ main {
     font-size: 17px;
     text-align: justify;
 }
+.article p a {
+    color: #384b68;
+}
+.article p a:hover {
+    color: #384b68be;
+}
 
 
 
