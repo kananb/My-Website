@@ -15,27 +15,32 @@ main {
     width: 100%;
 }
 
-.external-links {
+#external-links {
     text-align: center;
     margin: 20px auto 60px auto;
-    width: 80%;
+    width: 40%;
     font-size: 18px;
     line-height: 0.1em;
     border-bottom: 2px solid #18181877;
     font-weight: bold;
     color: var(--font-color);
+
+    transition-duration:  250ms;
 }
-.external-links span {
+#external-links.expand {
+    width: 80%;
+}
+#external-links span {
     background: white;
     padding: 0 10px;
 }
-.external-links span a {
+.external-link {
     display: inline-block;
     padding: 0 10px;
 
-    transition-duration: .2s;
+    transition-duration: 250ms;
 }
-.external-links span a:hover {
+.external-link:hover {
     text-decoration: underline;
 }
 

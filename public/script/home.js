@@ -1,5 +1,8 @@
 let articles = document.getElementsByClassName('article');
+let externalLinks = document.getElementsByClassName('external-link');
+let externalLinksParent = document.getElementById('external-links');
 let windowHeight = document.documentElement.clientHeight;
+
 
 function isAbove(element) {
     return element.getBoundingClientRect().bottom < 0;
@@ -21,8 +24,17 @@ function scrolled() {
     }
 }
 
-document.onscroll = scrolled;
-document.onresize = () => {
+
+document.addEventListener('scroll', scrolled);
+document.addEventListener('resize', () => {
     windowHeight = document.documentElement.clientHeight;
+});
+for (let i = 0; i < externalLinks.length; ++i) {
+    externalLinks[i].addEventListener('mouseenter', () => {
+        externalLinksParent.classList.add('expand');
+    });
+    externalLinks[i].addEventListener('mouseleave', () => {
+        externalLinksParent.classList.remove('expand');
+    });
 }
 scrolled();
