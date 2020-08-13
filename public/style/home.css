@@ -1,7 +1,7 @@
 body {
+    overflow-x: hidden;
     background-color: white;
 }
-
 
 main {
     width: 100%;
@@ -9,6 +9,74 @@ main {
 
 .banner {
     display: block;
-    margin: 60px 0;
+    margin: 60px 0 20px 0;
     width: 100%;
+}
+
+.external-links {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    width: 60%;
+    font-size: 15px;
+    line-height: 0.1em;
+    border-bottom: 1px solid #00000031;
+    font-weight: 800;
+}
+.external-links-bg {
+    background: white;
+    padding: 0 20px;
+}
+
+.article {
+    text-align: left;
+    opacity: 1;
+    width: 80%;
+    padding: 10px 20px 20px 20px;
+    margin: 30px auto 30px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 10px -8px #000000;
+
+    transition: background-color 200ms, transform 750ms, opacity 750ms;
+}
+.article.hiding-below {
+    opacity: 0;
+    transform: translateY(40%);
+    -webkit-transform: translateY(40%);
+}
+.article.hiding-above {
+    opacity: 0;
+    transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
+}
+.article:hover {
+    background-color: #f1f1f1;
+}
+.article h1 {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    margin: 15px 0 10px 0;
+    font-family: arial;
+    font-size: 25px;
+}
+.article p {
+    line-height: 1.75em;
+    font-size: 17px;
+    text-align: justify;
+}
+
+
+
+@media screen and (min-width: 825px) {
+    .article {
+        width: 70%;
+    }
+    .article h1 {
+        padding: 0 0 0 30px;
+        margin: 30px 0 20px 0;
+        font-size: 30px;
+    }
+    .article p {
+        line-height: 2em;
+        font-size: 18px;
+    }
 }

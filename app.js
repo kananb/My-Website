@@ -33,3 +33,9 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (request, response) => {
     response.render('home');
 });
+app.get('/portfolio', (request, response) => {
+    response.render('portfolio');
+});
+app.get('/contact', (request, response) => {
+    response.render('contact');
+});

@@ -23,6 +23,8 @@ a {
     height: 60px;
     box-shadow: 0px -1px 3px 0px #00000018 inset;
     background-color: #f7f7f7;
+
+    z-index: 1;
 }
 
 .logo {
@@ -71,7 +73,7 @@ a {
     padding: 8px 20px;
     background-color: #f0f0f0;
     font-size: 14px;
-    border: 2px solid transparent;
+    box-shadow: 0px 0px 1px 0px transparent inset; /* stops a little outline from appearing after hovering over the element */
 
     transition-duration: .2s;
 }
