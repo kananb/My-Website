@@ -1,6 +1,8 @@
 body {
     overflow-x: hidden;
     background-color: white;
+    
+    --font-color: #181818;
 }
 
 main {
@@ -15,16 +17,26 @@ main {
 
 .external-links {
     text-align: center;
-    margin: 0 auto 20px auto;
-    width: 60%;
-    font-size: 15px;
+    margin: 20px auto 60px auto;
+    width: 80%;
+    font-size: 18px;
     line-height: 0.1em;
-    border-bottom: 1px solid #00000031;
-    font-weight: 800;
+    border-bottom: 2px solid #18181877;
+    font-weight: bold;
+    color: var(--font-color);
 }
-.external-links-bg {
+.external-links span {
     background: white;
-    padding: 0 20px;
+    padding: 0 10px;
+}
+.external-links span a {
+    display: inline-block;
+    padding: 0 10px;
+
+    transition-duration: .2s;
+}
+.external-links span a:hover {
+    text-decoration: underline;
 }
 
 .article {

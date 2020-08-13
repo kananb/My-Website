@@ -5,7 +5,7 @@ function isAbove(element) {
     return element.getBoundingClientRect().bottom < 0;
 }
 function isBelow(element) {
-    return element.getBoundingClientRect().top > windowHeight;
+    return element.getBoundingClientRect().top > windowHeight - 10;
 }
 
 function scrolled() {
@@ -22,4 +22,7 @@ function scrolled() {
 }
 
 document.onscroll = scrolled;
+document.onresize = () => {
+    windowHeight = document.documentElement.clientHeight;
+}
 scrolled();
