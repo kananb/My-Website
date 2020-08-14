@@ -18,8 +18,9 @@ main {
 #external-links {
     text-align: center;
     margin: 20px auto 60px auto;
-    width: 40%;
-    font-size: 18px;
+    width: 80%;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
     line-height: 0.1em;
     border-bottom: 2px solid #18181877;
     font-weight: bold;
@@ -72,24 +73,47 @@ main {
     display: inline-block;
     padding: 0 0 0 10px;
     margin: 15px 0 10px 0;
-    font-family: arial;
+    font-family: 'EB Garamond', serif;
     font-size: 25px;
 }
-.article p {
+.article-text {
     line-height: 1.75em;
-    font-size: 17px;
+    font-size: 16px;
+    font-family: 'Source Serif Pro', serif;
     text-align: justify;
 }
-.article p a {
+.article-text a {
     color: #384b68;
+    font-family: 'Source Serif Pro', serif;
 }
-.article p a:hover {
+.article-text a:hover {
     color: #384b68be;
+}
+
+.picture-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    align-items: center;
+    justify-items: center;
+}
+.picture-article .article-text {
+    width: 100%;
+}
+.picture-article img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px -5px #000000;
 }
 
 
 
 @media screen and (min-width: 825px) {
+    #external-links {
+        width: 60%;
+        font-size: 18px;
+    }
     .article {
         width: 70%;
     }
@@ -101,5 +125,19 @@ main {
     .article p {
         line-height: 2em;
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .picture-article {
+        grid-template-columns: 5fr 2fr;
+        grid-gap: 30px;
+        grid-template-areas: "text image";
+    }
+    .picture-article p {
+        grid-area: text;
+    }
+    .picture-article img {
+        grid-area: image;
     }
 }

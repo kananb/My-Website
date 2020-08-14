@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
     <script src="script/home.js" defer=true></script>
 </head>
 <body>
@@ -21,26 +23,33 @@
         </p>
         <section class="article hiding-below">
             <h1>About me</h1>
-            <p>
-                <% let date = new Date(); %>
-                I'm Kanan Boubion, a junior at the University of San Diego and an avid programmer. I started programming
-                <%= ((date.getFullYear() + (date.getMonth() + 1) / 12) - 2014.58).toPrecision(2) %> years ago and ever since
-                then it has been my hobby and career choice. I love learning new things about computer science and improving
-                my programming ability. I am currently looking for work to do alongside my studies and am interested in all ends
-                of the computer science spectrum. If you have any questions or want to connect, I can be found at
-                <a href="" target="">kananbboubion@gmail.com</a>.
-            </p>
+            <div class="picture-article">
+                <img src="img/headshot.jfif" alt="headshot">
+                <p class="article-text">
+                    <% let date = new Date(); %>
+                    <% ((date.getFullYear() + (date.getMonth() + 1) / 12) - 2014.58).toPrecision(2) // use this for a very precise timeframe %>
+                    I'm Kanan Boubion, I'm a junior at the University of San Diego and an avid programmer. I started programming
+                    <%= date.getFullYear() - 2014 %> years ago and since then programming has become my biggest passion. It became
+                    my hobby as well as my dream job. I love learning new things about computer science and improving my programming
+                    abilities. I am currently looking for work to do alongside my studies and am interested in all ends of the computer
+                    science spectrum. If you have any questions or want to connect, I can be found at kananbboubion@gmail.com or
+                    through the <a href="/contact">contact</a> page.
+                </p>
+            </div>
         </section>
         <section class="article hiding-below">
-            <h1>Background</h1>
-            <p>
-                I began programming during the summer going into my freshman year of high school. I had enrolled my school's new
-                computer science class and wanted to get a head start before classes began. I was immediately in love with it
+            <h1>Skills</h1>
+            <p class="article-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur placeat expedita vitae, 
+                reprehenderit distinctio voluptate corrupti accusantium quis ut minus repudiandae deserunt amet 
+                sed asperiores id. Velit, distinctio quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quidem alias voluptates est consequatur fugiat aspernatur praesentium quisquam, cum repellat nobis, 
+                obcaecati ea ipsum minus laborum? Consequatur mollitia vero odio quaerat?
             </p>
         </section>
         <section class="article hiding-below">
             <h1>Goals</h1>
-            <p>
+            <p class="article-text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur placeat expedita vitae, 
                 reprehenderit distinctio voluptate corrupti accusantium quis ut minus repudiandae deserunt amet 
                 sed asperiores id. Velit, distinctio quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -49,13 +58,10 @@
             </p>
         </section>
         <section class="article hiding-below">
-            <h1>Skills</h1>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas tenetur placeat expedita vitae, 
-                reprehenderit distinctio voluptate corrupti accusantium quis ut minus repudiandae deserunt amet 
-                sed asperiores id. Velit, distinctio quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quidem alias voluptates est consequatur fugiat aspernatur praesentium quisquam, cum repellat nobis, 
-                obcaecati ea ipsum minus laborum? Consequatur mollitia vero odio quaerat?
+            <h1>Background</h1>
+            <p class="article-text">
+                I began programming during the summer going into my freshman year of high school. I had enrolled my school's new
+                computer science class and wanted to get a head start before classes began. I was immediately in love with it
             </p>
         </section>
     </main>
