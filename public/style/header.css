@@ -48,7 +48,7 @@ a {
     margin: 0 20px;
     border-radius: 5px;
 
-    transition-duration: .2s;
+    transition-duration: 250ms;
 }
 .menu:hover {
     cursor: pointer;
@@ -89,9 +89,8 @@ a {
     padding: 8px 20px;
     background-color: #f0f0f0;
     font-size: 14px;
-    box-shadow: 0px 0px 1px 0px transparent inset; /* stops a little outline from appearing after hovering over the element */
 
-    transition-duration: .2s;
+    transition-duration: 250ms;
 }
 #links a:hover {
     background-color: #d6d6d6;
@@ -130,6 +129,7 @@ a {
     #links a {
         font-size: 23px;
         font-weight: bold;
+        min-width: 100px;
         width: 50%;
         padding: 0;
         margin: 0 auto;
@@ -137,7 +137,7 @@ a {
     }
     #links a:hover {
         background-color: transparent;
-        box-shadow: 0px 3px 0px 0px var(--font-color);
+        box-shadow: 0px 5px 0px -1px var(--font-color);
     }
     #links a:active {
         background-color: transparent;

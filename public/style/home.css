@@ -105,6 +105,11 @@ main {
     max-width: 250px;
     border-radius: 5px;
     box-shadow: 3px 3px 10px -5px #000000;
+
+    transition-duration: 250ms;
+}
+.picture-article img:hover {
+    transform: scale(1.05);
 }
 
 
