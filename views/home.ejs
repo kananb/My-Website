@@ -26,10 +26,11 @@
             <div class="picture-article">
                 <img src="img/headshot.jfif" alt="headshot">
                 <p class="article-text">
-                    <% let date = new Date(); %>
-                    <% ((date.getFullYear() + (date.getMonth() + 1) / 12) - 2014.58).toPrecision(2) // use this for a very precise timeframe %>
-                    I'm Kanan Boubion, I'm a junior at the University of San Diego and an avid programmer. I started programming
-                    <%= date.getFullYear() - 2014 %> years ago and since then programming has become my biggest passion. It became
+                    <% let year = new Date().getFullYear(); %>
+                    <% let grades = ['junior at', 'senior at', 'graduate of']; %>
+                    <% // ((date.getFullYear() + (date.getMonth() + 1) / 12) - 2014.58).toPrecision(2) // use this for a very precise timeframe %>
+                    I'm Kanan Boubion, I'm a <%= grades[Math.min(2, year % 2020)] %> the University of San Diego and an avid programmer.
+                    I started programming <%= year - 2014 %> years ago and since then programming has become my biggest passion. It became
                     my hobby as well as my dream job. I love learning new things about computer science and improving my programming
                     abilities. I am currently looking for work to do alongside my studies and am interested in all ends of the computer
                     science spectrum. If you have any questions or want to connect, I can be found at kananbboubion@gmail.com or
